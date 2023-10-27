@@ -72,9 +72,9 @@
 
     <Button
         android:id="@+id/buttonSearch"
-        android:layout_width="112dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="105dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:text="Search"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,6 +91,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#E49F24"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -98,26 +99,14 @@
         android:id="@+id/textView11"
         android:layout_width="96dp"
         android:layout_height="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="60dp"
         android:text="Rankings:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#E49F24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="134dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="48dp"
-        android:text="Character Name:"
-        android:textColor="#E49F24"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextToon" />
 
     <TextView
         android:id="@+id/textView7"
@@ -142,18 +131,6 @@
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="134dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="16dp"
-        android:text="Mythic Rating:"
-        android:textColor="#E49F24"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView13"
@@ -232,13 +209,37 @@
         android:id="@+id/textViewName"
         android:layout_width="130dp"
         android:layout_height="31dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="28dp"
         android:text="..."
         android:textColor="#F4F1F1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintHorizontal_bias="0.164"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSearch" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextToonServer" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="134dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:text="Character Name:"
+        android:textColor="#E49F24"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextToon" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="134dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:text="Character Name:"
+        android:textColor="#E49F24"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextToon" />
 
     <TextView
         android:id="@+id/textViewRaceWorld"
@@ -278,7 +279,7 @@
         android:id="@+id/textViewDpsRealm"
         android:layout_width="58dp"
         android:layout_height="30dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:text="..."
         android:textColor="#F4F1F1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -356,26 +357,86 @@
 
     <TextView
         android:id="@+id/textViewGuild"
-        android:layout_width="130dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="189dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
         android:text="..."
         android:textColor="#F4F1F1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewServer" />
 
     <TextView
         android:id="@+id/textViewRating"
         android:layout_width="130dp"
         android:layout_height="31dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="..."
         android:textColor="#F4F1F1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintHorizontal_bias="0.197"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/textViewGuild" />
+
+    <TextView
+        android:id="@+id/textViewSpec"
+        android:layout_width="130dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="12dp"
+        android:text="..."
+        android:textColor="#F4F1F1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRating" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="134dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:text="Mythic Rating:"
+        android:textColor="#E49F24"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="134dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:text="Mythic Rating:"
+        android:textColor="#E49F24"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="134dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:text="Main Spec:"
+        android:textColor="#E49F24"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="82dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="28dp"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextToonServer"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSearch" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
